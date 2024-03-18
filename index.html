@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title><!-- title of the webpage -->
+    <link rel="icon" href="logo.png" type="image"><!-- Linking webpage icon -->
+    <link rel="stylesheet" href="Style.css"><!-- Linking CSS stylesheet -->
+</head>
+<body>
+    <h1>WORD COUNTER BY KRISHA</h1>
+    <div class="display"><!-- Main content -->
+
+        <div style="display: block;">
+            <form action="">
+                <div class="area"><!-- Textarea to enter text -->
+                    <label for="name" class="txt">Please enter your text here: <b class="star">*</b><br><br></label>
+                    <textarea id="w"  oninput="wordCount()"  required="required" placeholder="Enter your text"></textarea>
+                </div>
+            </form>
+            
+            <!-- Enter a word to search for in the text -->
+            <p class="area" id="instruction">Enter your word here to search for: <br></p>
+
+            <div class="display">
+
+                <form action="">
+                    <div class="area">
+                        <textarea id="search"  oninput="wordCount()"  required="required" placeholder="Enter your word"></textarea>
+                    </div>
+                </form>
+
+                <!-- Returns the frequency of the searched word in provided text -->
+                <div class="Search" id="CountSearch"></div>
+
+            </div>
+        </div>
+
+        <div class="counting">
+
+            <div class="main"><!-- Main buttons for counting total sentences, words, and letters -->
+                <p type="submit" class="button" id="Sentences">Sentences</p>
+                <p type="submit" class="button" id="Words">Total words</p>
+                <p type="submit" class="button" id="Characters">Total Letters</p>
+            </div>
+
+            <div class="Characters"><!-- Button rows for counting vowels and consonants -->
+                <p type="submit" class="vowel" id="letterA">A</p>
+                <p type="submit" class="consonant" id="letterB">B</p>
+                <p type="submit" class="consonant" id="letterC">C</p>
+                <p type="submit" class="consonant" id="letterD">D</p>
+                <p type="submit" class="vowel" id="letterE">E</p>
+                <p type="submit" class="consonant" id="letterF">F</p>
+                <p type="submit" class="consonant" id="letterG">G</p>
+                <p type="submit" class="consonant" id="letterH">H</p>
+                <p type="submit" class="vowel" id="letterI">I</p>
+            </div>
+
+            <div class="Characters"><!-- Button rows for counting vowels and consonants -->
+                <p type="submit" class="consonant" id="letterJ">J</p>
+                <p type="submit" class="consonant" id="letterK">K</p>
+                <p type="submit" class="consonant" id="letterL">L</p>
+                <p type="submit" class="consonant" id="letterM">M</p>
+                <p type="submit" class="consonant" id="letterN">N</p>
+                <p type="submit" class="vowel" id="letterO">O</p>
+                <p type="submit" class="consonant" id="letterP">P</p>
+                <p type="submit" class="consonant" id="letterQ">Q</p>
+                <p type="submit" class="consonant" id="letterR">R</p>
+            </div>
+
+            <div class="Characters"><!-- Button rows for counting vowels and consonants -->
+                <p type="submit" class="consonant" id="letterS">S</p>
+                <p type="submit" class="consonant" id="letterT">T</p>
+                <p type="submit" class="vowel" id="letterU">U</p>
+                <p type="submit" class="consonant" id="letterV">V</p>
+                <p type="submit" class="consonant" id="letterW">W</p>
+                <p type="submit" class="consonant" id="letterX">X</p>
+                <p type="submit" class="consonant" id="letterY">Y</p>
+                <p type="submit" class="consonant" id="letterZ">Z</p>
+                <p type="submit" class="punctuation" id="period">.</p>
+            </div>
+
+            <div class="Characters"><!-- Button rows for counting vowels and consonants -->
+                <p type="submit" class="punctuation" id="exclaimation">!</p>
+                <p type="submit" class="punctuation" id="semicolon">;</p>
+                <p type="submit" class="punctuation" id="colon">:</p>
+                <p type="submit" class="punctuation" id="hyphen">-</p>
+                <p type="submit" class="punctuation" id="comma">,</p>
+                <p type="submit" class="punctuation" id="apostrophe">'</p>
+                <p type="submit" class="punctuation" id="doublequotes">"</p>
+                <p type="submit" class="punctuation" id="underscore">_</p>
+                <p type="submit" class="punctuation" id="question">?</p>
+            </div>
+
+            <div class="Characters"><!-- Button rows for counting vowels and consonants -->
+                <p type="submit" class="common" id="the">The</p>
+                <p type="submit" class="common" id="of">Of</p>
+                <p type="submit" class="common" id="an">An</p>
+                <p type="submit" class="common" id="and">And</p>
+                <p type="submit" class="common" id="it">It</p>
+                <p type="submit" class="common" id="that">That</p>
+                <p type="submit" class="common" id="this">This</p>
+            </div>
+
+            <div class="Characters"><!-- Button rows for counting vowels and consonants -->
+                <p type="submit" class="common" id="is">Is</p>
+                <p type="submit" class="common" id="in">In</p>
+                <p type="submit" class="common" id="am">Am</p>
+                <p type="submit" class="common" id="are">Are</p>
+                <p type="submit" class="common" id="i">I</p>
+                <p type="submit" class="common" id="we">We</p>
+                <p type="submit" class="common" id="my">My</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="JavaScript.js"></script><!-- Linking JavaScript File -->
+</body>
+</html>
